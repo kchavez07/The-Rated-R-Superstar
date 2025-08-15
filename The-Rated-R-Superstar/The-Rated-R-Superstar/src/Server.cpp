@@ -1,3 +1,18 @@
+/**
+ * @file Server.cpp
+ * @brief Implementación del servidor TCP con cifrado híbrido RSA/AES.
+ *
+ * @details
+ * Este módulo se encarga de:
+ *  - Iniciar un servidor TCP y aceptar clientes.
+ *  - Intercambiar claves públicas RSA con el cliente.
+ *  - Recibir y descifrar la clave AES cifrada con RSA.
+ *  - Enviar y recibir mensajes cifrados con AES-256-CBC.
+ *  - Gestionar un bucle de chat con hilos para envío y recepción simultánea.
+ *
+ * @note Usa NetworkHelper para la comunicación y CryptoHelper para la criptografía.
+ */
+
 #include "Server.h"
 
 Server::Server(int port) : m_port(port), m_clientSock(-1) {

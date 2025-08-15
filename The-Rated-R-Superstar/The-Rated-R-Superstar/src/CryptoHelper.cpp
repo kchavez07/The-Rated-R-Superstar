@@ -1,3 +1,18 @@
+/**
+ * @file CryptoHelper.cpp
+ * @brief Implementación de utilidades criptográficas con OpenSSL.
+ *
+ * @details
+ * Esta unidad implementa las funciones declaradas en CryptoHelper.h para:
+ *  - Generar y manejar pares de claves RSA (2048 bits).
+ *  - Exportar e importar claves públicas en formato PEM.
+ *  - Generar una clave AES-256 aleatoria para cifrado de sesión.
+ *  - Cifrar y descifrar la clave AES usando RSA con padding OAEP.
+ *  - Cifrar y descifrar mensajes con AES-256 en modo CBC.
+ *
+ * @note Requiere la librería OpenSSL y su inicialización previa si aplica.
+ */
+
 #include "CryptoHelper.h"
 #include "openssl/pem.h"
 #include "openssl/rand.h"

@@ -1,3 +1,19 @@
+/**
+ * @file NetworkHelper.cpp
+ * @brief Implementación de utilidades de red para cliente y servidor TCP.
+ *
+ * @details
+ * Este módulo gestiona:
+ *  - Inicialización y limpieza de Winsock.
+ *  - Creación de sockets TCP para servidor y cliente.
+ *  - Inicio de servidor y aceptación de conexiones entrantes.
+ *  - Conexión a un servidor remoto.
+ *  - Envío y recepción de datos en formato texto y binario.
+ *  - Funciones auxiliares para enviar y recibir tamaños exactos.
+ *
+ * @note Diseñado para funcionar en Windows con la API de Winsock2.
+ */
+
 #include "NetworkHelper.h"
 
 NetworkHelper::NetworkHelper() : m_serverSocket(INVALID_SOCKET), m_initialized(false) {

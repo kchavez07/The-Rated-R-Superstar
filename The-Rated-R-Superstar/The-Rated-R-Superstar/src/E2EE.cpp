@@ -1,3 +1,21 @@
+/**
+ * @file main.cpp
+ * @brief Punto de entrada para la aplicación de chat cifrado RSA/AES.
+ *
+ * @details
+ * Permite iniciar la aplicación en modo servidor o cliente:
+ *  - **Servidor**:
+ *    - Inicia un servidor TCP en el puerto especificado.
+ *    - Acepta un cliente, intercambia claves RSA y recibe la clave AES cifrada.
+ *    - Inicia el bucle de chat con envío y recepción simultánea.
+ *  - **Cliente**:
+ *    - Conecta al servidor en la IP y puerto indicados.
+ *    - Intercambia claves RSA y envía la clave AES cifrada.
+ *    - Inicia el bucle de chat con envío y recepción simultánea.
+ *
+ * @note Usa las clases Server y Client para manejar la lógica de red y cifrado.
+ */
+
 #include "Prerequisites.h"
 #include "Server.h"
 #include "Client.h"

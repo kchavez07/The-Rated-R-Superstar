@@ -1,3 +1,16 @@
+/**
+ * @file Client.cpp
+ * @brief Implementación del cliente TCP con cifrado híbrido RSA/AES.
+ *
+ * @details
+ * Este módulo gestiona:
+ *  - Conexión al servidor mediante TCP.
+ *  - Intercambio de claves públicas RSA.
+ *  - Envío de clave AES cifrada con la RSA del servidor.
+ *  - Envío y recepción de mensajes cifrados con AES-256-CBC.
+ *  - Bucle de chat con hilos para envío y recepción simultánea.
+ */
+
 #include "Client.h"
 
 Client::Client(const std::string& ip, int port)

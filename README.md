@@ -121,7 +121,6 @@ Este proyecto es de uso académico y está licenciado bajo **MIT**.
 ---
 
 ## 👨‍💻 Créditos
-- ✍️ **Creador:** [Tu Nombre]
 - 📚 **Librerías utilizadas:**
   - **OpenSSL** (RSA/AES)
   - **Winsock2** (TCP en Windows)
